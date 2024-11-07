@@ -72,19 +72,19 @@
       </nav>
     </div>
     <div class="lg:px-11 w-full flex flex-col gap-3">
-      <h2 class="text-5xl font-medium" id="operate">Learn</h2>
         {{ partial "docs-section.html" (dict
-          "Title" "Develop with Redis"
-          "Description" "Learn how to use the Redis in-memory data store."
-	  "ButtonLink" "./develop"
-          "ButtonLabel" "Learn more"
-          "LinksLeftTitle" "Featured content"
-          "LinksLeft" (slice
-            (dict "Text" "Vector search" "URL" "./develop/interact/search-and-query/query/vector-search")
-            (dict "Text" "Data structure store" "URL" "./develop/get-started/data-store/")
-	    (dict "Text" "Document database" "URL" "./develop/get-started/document-database/")
-          )
-        ) }}
+          "Title" "Get Started"
+          "Description" "Installation & setup for new users"
+	  "ButtonLink" "./operate/get-started/quick-start-install"
+          "ButtonLabel" "Quick start guide"
+          "LinksLeftTitle" "Step-by-step instructions"
+	     "ButtonLink" "./operate/get-started/quick-start-install"
+             "ButtonLabel" "Single-node cluster install" 
+	     "ButtonLink" "./operate/rc/databases/create-database/create-active-active-database/"
+             "ButtonLabel" "Deploy Active-Active databases in Redis Cloud" 
+	     "ButtonLink" "./operate/kubernetes/deployment/quick-start/"
+             "ButtonLabel" "Kubernetes deployment"
+          }}
         {{ partial "docs-section.html" (dict
           "Title" "Libraries and tools"
           "Description" "Learn about libraries and tools available for Redis."
@@ -125,19 +125,18 @@
         ) }}
       </div>
       <div class="lg:px-11 w-full flex flex-col gap-3">
-        <h2 class="text-5xl font-medium" id="operate">Explore</h2>
         {{ partial "docs-section.html" (dict
-          "Title" "Redis and Stack"
-          "Description" "Redis Stack extends Redis with modern data models and processing engines."
-          "ButtonLink" "./operate/oss_and_stack/"
-          "ButtonLabel" "Read more"
-          "LinksLeftTitle" "Learn more"
-          "LinksLeft" (slice
-            (dict "Text" "Install" "URL" "./operate/oss_and_stack/install/install-stack/")
-            (dict "Text" "Redis Query Engine" "URL" "./develop/interact/search-and-query/")
-            (dict "Text" "JSON" "URL" "./develop/data-types/json/")
-          )
-        ) }}
+          "Title" "Use cases"
+          "Description" "Cache user sessions"
+          "ButtonLink" "./operate/get-started/use-cases/caching"
+          "ButtonLabel" "Caching quick start"
+              "ButtonLink" "./operate/get-started/leaderboards"
+             "ButtonLabel" "Create leaderboards in gaming apps" 
+	     "ButtonLink" "./develop/get-started/redis-in-ai/"
+             "ButtonLabel" "AI agents, chatbots, and apps" 
+	     "ButtonLink" "./develop/get-started/vector-database/"
+             "ButtonLabel" "Vector database quick start guide" 
+	      }}
         {{ partial "docs-section.html" (dict
           "Title" "Redis Cloud"
           "Description" "Deploy Redis Enterprise on Amazon Web Services, Google Cloud, or Microsoft Azure."
