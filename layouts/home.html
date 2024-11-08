@@ -79,34 +79,46 @@
           "ButtonLabel" "Quick start guide"  
          ) }}
         {{ partial "docs-section.html" (dict
+	     "Title" "Clustering"
+          "Description" "Basic Redis software cluster"
           "ButtonLink" "./operate/get-started/quick-start-install"
              "ButtonLabel" "Single-node cluster install" 
         ) }}
         {{ partial "docs-section.html" (dict
+	     "Title" "Active-Active"
+          "Description" "Cloud deployment"
            "ButtonLink" "./operate/rc/databases/create-database/create-active-active-database/"
              "ButtonLabel" "Deploy Active-Active databases in Redis Cloud" 
         ) }}
         {{ partial "docs-section.html" (dict
+	     "Title" "Kubernetes"
+          "Description" "Container deployment"
             "ButtonLink" "./operate/kubernetes/deployment/quick-start/"
              "ButtonLabel" "Kubernetes deployment"
         ) }}
       </div>
       <div class="lg:px-11 w-full flex flex-col gap-3">
         {{ partial "docs-section.html" (dict
-          "Title" "Use cases"
+          "Title" "Caching"
           "Description" "Cache user sessions"
           "ButtonLink" "./operate/get-started/use-cases/caching"
           "ButtonLabel" "Caching quick start" 
 	    )  }}
         {{ partial "docs-section.html" (dict
-          "ButtonLink" "./operate/get-started/leaderboards"
-             "ButtonLabel" "Create leaderboards in gaming apps" 
+	       "Title" "Leaderboards and rate limiting"
+          "Description" "Create leaderboards or rate limiting with sorted sets"
+          "ButtonLink" "./develop/data-types/sorted-sets/"
+             "ButtonLabel" "Sorted sets ordered by a score with example code" 
         ) }}
         {{ partial "docs-section.html" (dict
+	       "Title" "AI and machine learning"
+          "Description" "Fast and scalable data retrieval for AI projects"
           "ButtonLink" "./develop/get-started/redis-in-ai/"
              "ButtonLabel" "AI agents, chatbots, and apps" 
         ) }}
         {{ partial "docs-section.html" (dict
+	       "Title" "Query data and perform a vector search"
+          "Description" "Transform unstructured data into vectors that ML models can process"
            "ButtonLink" "./develop/get-started/vector-database/"
              "ButtonLabel" "Vector database quick start guide" 
         ) }}
