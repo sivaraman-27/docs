@@ -1,12 +1,13 @@
 <div class="w-full flex flex-col gap-5">
-  <div class="flex flex-row gap-5 border-t border-redis-pen-300 pt-5">
+  <!-- First row of content without top border -->
+  <div class="flex flex-row gap-5">
     <h3 class="text-2xl">{{ .Title }}</h3>
     <p>{{ .Description }}</p>
     {{ partial "components/button-link.html" (dict "Href" .ButtonLink "Text" .ButtonLabel) }}
   </div>
   
   <div class="font-mono">
-    <!-- First row of buttons with horizontal line -->
+    <!-- First row of buttons with horizontal line only above this section -->
     <div class="flex flex-row gap-5 border-t border-redis-pen-300 pt-5">
       <p class="uppercase">{{ .LinksLeftTitle }}</p>
       {{ range .LinksLeft }}
@@ -14,7 +15,7 @@
       {{ end }}
     </div>
     
-    <!-- Second row of buttons with horizontal line (if LinksRight is available) -->
+    <!-- Second row of buttons with horizontal line only above this section -->
     {{ if .LinksRight }}
     <div class="flex flex-row gap-5 border-t border-redis-pen-300 pt-5">
       <p class="uppercase">{{ .LinksRightTitle }}</p>
